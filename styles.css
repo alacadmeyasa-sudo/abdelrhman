@@ -647,6 +647,37 @@ h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.25; font-weigh
   text-align: center; border-top: 1px solid var(--line); margin-top: 1.2rem;
 }
 
+/* ---- Inside the factory ---- */
+.factory__grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); grid-auto-rows: 240px; gap: 1.2rem;
+}
+.factory__item {
+  position: relative; border-radius: var(--radius-lg); overflow: hidden;
+  box-shadow: var(--shadow-sm); background: var(--ink-2);
+  transition: transform .45s var(--ease), box-shadow .45s var(--ease);
+}
+.factory__item--wide { grid-column: span 2; grid-row: span 2; }
+.factory__item:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
+.factory__item img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  transition: transform .6s var(--ease);
+}
+.factory__item:hover img { transform: scale(1.06); }
+.factory__item figcaption {
+  position: absolute; inset: auto 0 0 0; z-index: 2; padding: 1.3rem;
+  color: var(--white); background: linear-gradient(transparent, rgba(0,0,0,.78));
+}
+.factory__item figcaption strong { display: block; font-family: var(--font-display); font-size: 1.05rem; }
+.factory__item figcaption span { font-size: .85rem; opacity: .85; }
+/* Graceful placeholder while a photo hasn't been uploaded yet */
+.factory__item.is-missing { background: linear-gradient(160deg, var(--ink-2), var(--ink)); }
+.factory__item.is-missing img { display: none; }
+.factory__item.is-missing::before {
+  content: "📷"; position: absolute; inset: 0; display: grid; place-content: center;
+  font-size: 2.4rem; opacity: .35;
+}
+.factory__item.is-missing figcaption { background: linear-gradient(transparent, rgba(0,0,0,.5)); }
+
 /* ---- Contact form row ---- */
 .field--row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
 .field--row label { display: block; font-weight: 700; font-size: .92rem; margin-bottom: .45rem; }
@@ -655,6 +686,8 @@ h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.25; font-weigh
 @media (max-width: 980px) {
   .cards { grid-template-columns: repeat(2, 1fr); }
   .capacity__grid { grid-template-columns: 1fr; }
+  .factory__grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 220px; }
+  .factory__item--wide { grid-column: span 2; grid-row: span 1; }
 }
 @media (max-width: 640px) {
   .cards, .apps { grid-template-columns: 1fr; }
@@ -662,4 +695,6 @@ h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.25; font-weigh
   .about__media { height: 360px; }
   .field--row { grid-template-columns: 1fr; }
   .capacity__stats { gap: 1.4rem; }
+  .factory__grid { grid-template-columns: 1fr; grid-auto-rows: 220px; }
+  .factory__item--wide { grid-column: span 1; }
 }
