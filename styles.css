@@ -543,3 +543,123 @@ h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.25; font-weigh
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* ===================================================================
+   WPC update — door illustrations & new sections
+   =================================================================== */
+
+/* ---- Hero 3D door now uses an SVG illustration ---- */
+.door-3d__frame {
+  width: clamp(220px, 30vw, 300px);
+  height: auto; aspect-ratio: 220 / 340;
+  background: none; padding: 0; border-radius: 0; box-shadow: none;
+  filter: drop-shadow(0 26px 45px rgba(22,22,26,.35));
+  color: var(--gold-soft);
+}
+.door-3d__svg { width: 100%; height: 100%; }
+.door-3d__svg use, .about__door svg, .card__door svg, .gallery__door svg { width: 100%; height: 100%; }
+.about__door svg, .card__door svg, .gallery__door svg { display: block; }
+
+/* ---- About: overlapping door illustrations ---- */
+.about__media { position: relative; height: 460px; }
+.about__door { position: absolute; filter: drop-shadow(0 18px 40px rgba(22,22,26,.22)); }
+.about__door svg { width: 100%; height: 100%; }
+.about__door--front { width: 56%; height: 92%; inset-inline-end: 4%; bottom: 0; z-index: 2; }
+.about__door--back { width: 50%; height: 80%; inset-inline-start: 0; top: 0; opacity: .92; }
+.about__exp {
+  position: absolute; bottom: 4%; inset-inline-start: -2%; z-index: 3;
+  background: var(--gold); color: var(--ink);
+  border-radius: var(--radius); padding: 1rem 1.4rem; text-align: center;
+  box-shadow: var(--shadow-gold);
+}
+.about__exp strong { display: block; font-family: var(--font-display); font-size: 2rem; font-weight: 900; line-height: 1; letter-spacing: .04em; }
+.about__exp span { font-size: .8rem; font-weight: 700; }
+
+/* ---- Product cards: door illustration ---- */
+.cards { grid-template-columns: repeat(4, 1fr); }
+.card { padding: 1.8rem 1.6rem; text-align: center; }
+.card__door {
+  height: 200px; margin: 0 auto 1.2rem; display: grid; place-items: center;
+  transition: transform .45s var(--ease);
+}
+.card__door svg { height: 100%; width: auto; filter: drop-shadow(0 12px 22px rgba(22,22,26,.18)); }
+.card:hover .card__door { transform: translateY(-6px) scale(1.03); }
+.card h3 { font-size: 1.18rem; }
+.card p { font-size: .94rem; }
+
+/* ---- Applications ---- */
+.applications { background: var(--paper-2); }
+.apps { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.8rem; }
+.app {
+  background: var(--white); border-radius: var(--radius-lg); padding: 2.4rem;
+  box-shadow: var(--shadow-sm); position: relative; overflow: hidden;
+  transition: transform .45s var(--ease), box-shadow .45s var(--ease);
+}
+.app:hover { transform: translateY(-8px); box-shadow: var(--shadow); }
+.app__icon {
+  width: 74px; height: 74px; border-radius: 20px; font-size: 2.2rem;
+  display: grid; place-content: center; margin-bottom: 1.2rem;
+  background: linear-gradient(135deg, rgba(230,179,37,.2), rgba(230,179,37,.05));
+}
+.app h3 { font-size: 1.4rem; margin-bottom: .6rem; }
+.app > p { color: var(--muted); margin-bottom: 1.2rem; }
+.app ul { display: grid; gap: .6rem; }
+.app li { display: flex; align-items: center; gap: .6rem; font-weight: 600; font-size: .95rem; }
+.app li::before { content: "✔"; color: var(--gold-deep); font-size: .8rem; }
+
+/* ---- Capacity / Projects ---- */
+.capacity { background: linear-gradient(160deg, var(--ink) 0%, var(--ink-2) 100%); color: var(--paper); position: relative; overflow: hidden; }
+.capacity::before {
+  content: ""; position: absolute; top: -25%; inset-inline-end: -10%;
+  width: 48vw; height: 48vw; border-radius: 50%;
+  background: radial-gradient(circle, rgba(230,179,37,.2), transparent 65%);
+}
+.capacity__grid { position: relative; z-index: 1; display: grid; grid-template-columns: 1.3fr .9fr; gap: 3rem; align-items: center; }
+.capacity__text .eyebrow { color: var(--gold-soft); }
+.capacity__text h2 { font-size: clamp(1.9rem, 4vw, 2.8rem); margin: .3rem 0 1rem; }
+.capacity__text > p { color: rgba(250,247,240,.72); margin-bottom: 1.8rem; }
+.capacity__stats { display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 2rem; }
+.cstat strong { display: block; font-family: var(--font-display); font-weight: 900; font-size: 2.2rem; color: var(--gold-soft); line-height: 1; }
+.cstat span { font-size: .9rem; color: rgba(250,247,240,.7); }
+.capacity__partners {
+  background: rgba(250,247,240,.05); border: 1px solid rgba(250,247,240,.12);
+  border-radius: var(--radius-lg); padding: 2rem; backdrop-filter: blur(6px);
+}
+.capacity__partners h3 { color: var(--gold-soft); margin-bottom: 1.2rem; font-size: 1.2rem; }
+.capacity__partners ul { display: grid; gap: 1rem; }
+.capacity__partners li { display: flex; align-items: center; gap: .9rem; font-weight: 600; }
+.capacity__partners li span { font-size: 1.3rem; }
+
+/* ---- Gallery: WPC finishes ---- */
+.gallery__item::before { display: none; }
+.gallery__item {
+  height: auto; background: linear-gradient(160deg, var(--paper) 0%, var(--paper-2) 100%);
+  display: flex; flex-direction: column; align-items: center; padding: 1.6rem 1rem 0;
+  transition: transform .45s var(--ease), box-shadow .45s var(--ease);
+}
+.gallery__item:hover { transform: translateY(-8px); box-shadow: var(--shadow); }
+.gallery__door { height: 230px; display: grid; place-items: center; transition: transform .5s var(--ease); }
+.gallery__door svg { height: 100%; width: auto; filter: drop-shadow(0 14px 26px rgba(22,22,26,.2)); }
+.gallery__item:hover .gallery__door { transform: scale(1.05); }
+.gallery__item figcaption {
+  position: static; transform: none; opacity: 1; background: none;
+  color: var(--ink); font-weight: 700; padding: 1.1rem; width: 100%;
+  text-align: center; border-top: 1px solid var(--line); margin-top: 1.2rem;
+}
+
+/* ---- Contact form row ---- */
+.field--row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.field--row label { display: block; font-weight: 700; font-size: .92rem; margin-bottom: .45rem; }
+
+/* ---- Responsive for new sections ---- */
+@media (max-width: 980px) {
+  .cards { grid-template-columns: repeat(2, 1fr); }
+  .capacity__grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .cards, .apps { grid-template-columns: 1fr; }
+  .card__door { height: 180px; }
+  .about__media { height: 360px; }
+  .field--row { grid-template-columns: 1fr; }
+  .capacity__stats { gap: 1.4rem; }
+}

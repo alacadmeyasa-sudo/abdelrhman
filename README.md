@@ -1,10 +1,18 @@
 # نادا دورز | Nada Doors
 
-موقع تعريفي فاخر لمصنع **نادا دورز** المتخصص في تصنيع الأبواب الخشبية والمصفّحة والمدرّعة والذكية.
+موقع تعريفي فاخر لمصنع **نادا دورز** المتخصص حصرياً في تصنيع **أبواب WPC** المقاومة للماء
+لأبواب الغرف والحمامات — بأنواعها: ضلفة واحدة، سحاب، ضلفة ونص، وضلفتين — بطاقة إنتاجية
+تتجاوز **500 باب يومياً** وتوريد للمشاريع الكبرى وشركات التشطيبات والديكور.
 
-A modern, fancy, responsive marketing website for **Nada Doors** — a premium door
-factory. Built with a UI/UX-driven design system (gold + charcoal luxury palette),
-full RTL Arabic support, and smooth scroll-driven animations.
+A modern, fancy, responsive marketing website for **Nada Doors** — a factory
+specialized exclusively in **WPC doors** (waterproof, for rooms & bathrooms).
+Door types: single leaf, sliding, leaf-and-a-half, and double leaf. Highlights a
+500+ doors/day capacity and bulk supply for large projects and finishing
+companies. Built with a UI/UX-driven design system (gold + charcoal luxury
+palette), full RTL Arabic support, inline SVG door illustrations, and smooth
+scroll-driven animations.
+
+**Contact:** +966 54 407 2610 (WhatsApp & call) — طريق الأمير محمد بن سلمان، حي العقيق، الرياض.
 
 ## ✨ المميزات / Features
 

@@ -4,13 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#1a1a1a" />
-  <title>نادا دورز | Nada Doors — مصنع الأبواب الفاخرة</title>
-  <meta name="description" content="نادا دورز - مصنع متخصص في تصنيع الأبواب الخشبية والمصفحة والمدرعة بأعلى معايير الجودة والتصميم العصري في المملكة العربية السعودية." />
-  <meta name="keywords" content="أبواب, مصنع أبواب, نادا دورز, أبواب خشب, أبواب مصفحة, أبواب أمان, Nada Doors" />
+  <title>نادا دورز | Nada Doors — متخصصون في أبواب WPC</title>
+  <meta name="description" content="نادا دورز - مصنع متخصص حصرياً في أبواب WPC المقاومة للماء للغرف والحمامات: ضلفة واحدة، سحاب، ضلفة ونص، وضلفتين. طاقة إنتاجية تتجاوز 500 باب يومياً وتوريد للمشاريع الكبرى وشركات التشطيبات والديكور." />
+  <meta name="keywords" content="أبواب WPC, أبواب حمامات, أبواب غرف, مصنع أبواب, نادا دورز, باب سحاب, ضلفة ونص, ضلفتين, توريد مشاريع, Nada Doors WPC" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="نادا دورز | Nada Doors" />
-  <meta property="og:description" content="مصنع الأبواب الفاخرة — جودة، أمان، وأناقة." />
+  <meta property="og:title" content="نادا دورز | Nada Doors — متخصصون في أبواب WPC" />
+  <meta property="og:description" content="أبواب WPC مقاومة للماء للغرف والحمامات — أكثر من 500 باب يومياً وتوريد للمشاريع." />
   <meta property="og:type" content="website" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,15 +19,76 @@
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23E6B325'/%3E%3Crect x='30' y='22' width='40' height='56' rx='4' fill='none' stroke='white' stroke-width='5'/%3E%3Ccircle cx='60' cy='50' r='3' fill='white'/%3E%3C/svg%3E" />
 </head>
 <body>
+  <!-- ===== SVG door sprite (reusable illustrations) ===== -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <!-- shared grain pattern lives via stroke groups inside each symbol -->
+    </defs>
+
+    <!-- Single leaf -->
+    <symbol id="door-single" viewBox="0 0 220 340">
+      <rect x="14" y="8" width="192" height="324" rx="9" fill="#2a2a31"/>
+      <rect x="25" y="19" width="170" height="302" rx="4" fill="currentColor"/>
+      <g stroke="rgba(0,0,0,.10)" stroke-width="1.4">
+        <line x1="48" y1="22" x2="48" y2="318"/><line x1="74" y1="22" x2="74" y2="318"/>
+        <line x1="110" y1="22" x2="110" y2="318"/><line x1="146" y1="22" x2="146" y2="318"/>
+        <line x1="172" y1="22" x2="172" y2="318"/>
+      </g>
+      <rect x="46" y="40" width="128" height="116" rx="5" fill="rgba(0,0,0,.06)" stroke="rgba(0,0,0,.16)" stroke-width="1.6"/>
+      <rect x="46" y="176" width="128" height="126" rx="5" fill="rgba(0,0,0,.06)" stroke="rgba(0,0,0,.16)" stroke-width="1.6"/>
+      <rect x="34" y="160" width="7" height="44" rx="3.5" fill="#1f1f25"/>
+    </symbol>
+
+    <!-- Double leaf -->
+    <symbol id="door-double" viewBox="0 0 220 340">
+      <rect x="14" y="8" width="192" height="324" rx="9" fill="#2a2a31"/>
+      <rect x="25" y="19" width="82" height="302" rx="4" fill="currentColor"/>
+      <rect x="113" y="19" width="82" height="302" rx="4" fill="currentColor"/>
+      <g stroke="rgba(0,0,0,.10)" stroke-width="1.3">
+        <line x1="45" y1="22" x2="45" y2="318"/><line x1="66" y1="22" x2="66" y2="318"/><line x1="87" y1="22" x2="87" y2="318"/>
+        <line x1="133" y1="22" x2="133" y2="318"/><line x1="154" y1="22" x2="154" y2="318"/><line x1="175" y1="22" x2="175" y2="318"/>
+      </g>
+      <rect x="34" y="40" width="64" height="262" rx="5" fill="rgba(0,0,0,.06)" stroke="rgba(0,0,0,.16)" stroke-width="1.5"/>
+      <rect x="122" y="40" width="64" height="262" rx="5" fill="rgba(0,0,0,.06)" stroke="rgba(0,0,0,.16)" stroke-width="1.5"/>
+      <rect x="98" y="160" width="6" height="40" rx="3" fill="#1f1f25"/>
+      <rect x="116" y="160" width="6" height="40" rx="3" fill="#1f1f25"/>
+    </symbol>
+
+    <!-- Leaf and a half -->
+    <symbol id="door-half" viewBox="0 0 220 340">
+      <rect x="14" y="8" width="192" height="324" rx="9" fill="#2a2a31"/>
+      <rect x="25" y="19" width="120" height="302" rx="4" fill="currentColor"/>
+      <rect x="151" y="19" width="44" height="302" rx="4" fill="currentColor"/>
+      <g stroke="rgba(0,0,0,.10)" stroke-width="1.3">
+        <line x1="48" y1="22" x2="48" y2="318"/><line x1="74" y1="22" x2="74" y2="318"/><line x1="100" y1="22" x2="100" y2="318"/><line x1="124" y1="22" x2="124" y2="318"/>
+        <line x1="170" y1="22" x2="170" y2="318"/>
+      </g>
+      <rect x="36" y="40" width="98" height="262" rx="5" fill="rgba(0,0,0,.06)" stroke="rgba(0,0,0,.16)" stroke-width="1.5"/>
+      <rect x="158" y="40" width="30" height="262" rx="5" fill="rgba(0,0,0,.06)" stroke="rgba(0,0,0,.16)" stroke-width="1.5"/>
+      <rect x="136" y="160" width="6" height="40" rx="3" fill="#1f1f25"/>
+    </symbol>
+
+    <!-- Sliding -->
+    <symbol id="door-sliding" viewBox="0 0 220 340">
+      <rect x="10" y="20" width="200" height="10" rx="5" fill="#2a2a31"/>
+      <rect x="10" y="316" width="200" height="8" rx="4" fill="#2a2a31"/>
+      <rect x="28" y="30" width="92" height="286" rx="4" fill="currentColor" opacity=".85"/>
+      <rect x="100" y="30" width="92" height="286" rx="4" fill="currentColor"/>
+      <g stroke="rgba(0,0,0,.10)" stroke-width="1.3">
+        <line x1="120" y1="34" x2="120" y2="312"/><line x1="142" y1="34" x2="142" y2="312"/><line x1="164" y1="34" x2="164" y2="312"/>
+      </g>
+      <rect x="112" y="40" width="68" height="266" rx="5" fill="rgba(0,0,0,.06)" stroke="rgba(0,0,0,.16)" stroke-width="1.5"/>
+      <rect x="104" y="160" width="6" height="40" rx="3" fill="#1f1f25"/>
+      <path d="M150 332 h26 M150 332 l8 -6 M150 332 l8 6" stroke="#b8924a" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    </symbol>
+  </svg>
+
   <!-- Page loader -->
   <div class="loader" id="loader" aria-hidden="true">
-    <div class="loader__door">
-      <span></span><span></span>
-    </div>
+    <div class="loader__door"><span></span><span></span></div>
     <p class="loader__text">نـــادا دورز</p>
   </div>
 
-  <!-- Scroll progress bar -->
   <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
   <!-- Navigation -->
@@ -41,18 +101,15 @@
             <circle cx="62" cy="50" r="3.2" fill="currentColor"/>
           </svg>
         </span>
-        <span class="brand__text">
-          <strong>نادا دورز</strong>
-          <small>NADA DOORS</small>
-        </span>
+        <span class="brand__text"><strong>نادا دورز</strong><small>WPC DOORS</small></span>
       </a>
 
       <nav class="nav__links" id="navLinks" aria-label="القائمة الرئيسية">
         <a href="#home">الرئيسية</a>
-        <a href="#about">من نحن</a>
-        <a href="#products">منتجاتنا</a>
-        <a href="#features">لماذا نحن</a>
-        <a href="#process">مراحل التصنيع</a>
+        <a href="#about">عن WPC</a>
+        <a href="#products">أنواع الأبواب</a>
+        <a href="#applications">الاستخدامات</a>
+        <a href="#capacity">الطاقة الإنتاجية</a>
         <a href="#gallery">المعرض</a>
         <a href="#contact" class="btn btn--sm">اطلب عرض سعر</a>
       </nav>
@@ -71,166 +128,200 @@
     </div>
     <div class="container hero__inner">
       <div class="hero__content">
-        <p class="eyebrow reveal">صناعة سعودية • جودة عالمية</p>
+        <p class="eyebrow reveal">متخصصون حصرياً في أبواب WPC</p>
         <h1 class="hero__title reveal">
-          أبواب تُحاكي
-          <span class="text-gold">الفخامة</span>
-          وتحمي ما يهمك
+          أبواب <span class="text-gold">WPC</span>
+          مقاومة للماء
+          تدوم مدى الحياة
         </h1>
         <p class="hero__lead reveal">
-          في <strong>نادا دورز</strong> نصنع أبواباً تجمع بين الأناقة العصرية والأمان المطلق.
-          من الخشب الطبيعي إلى الأبواب المدرّعة — كل باب قصة تُصنع بإتقان.
+          في <strong>نادا دورز</strong> نصنع أبواب WPC فقط — المادة المثالية لأبواب
+          <strong>الغرف والحمامات</strong>: مقاومة 100% للماء والرطوبة والنمل الأبيض،
+          ولا تتقوّس ولا تتشقق. نوفّر <strong>الضلفة الواحدة، والسحاب، والضلفة ونص، والضلفتين</strong>.
         </p>
         <div class="hero__actions reveal">
-          <a href="#products" class="btn btn--lg">اكتشف منتجاتنا</a>
-          <a href="#contact" class="btn btn--ghost btn--lg">تواصل معنا</a>
+          <a href="#products" class="btn btn--lg">أنواع أبوابنا</a>
+          <a href="#contact" class="btn btn--ghost btn--lg">توريد للمشاريع</a>
         </div>
         <div class="hero__stats reveal">
-          <div class="stat"><span class="stat__num" data-count="15">0</span><span class="stat__plus">+</span><small>عاماً من الخبرة</small></div>
-          <div class="stat"><span class="stat__num" data-count="8000">0</span><span class="stat__plus">+</span><small>باب تم تركيبه</small></div>
-          <div class="stat"><span class="stat__num" data-count="98">0</span><span class="stat__plus">%</span><small>رضا العملاء</small></div>
+          <div class="stat"><span class="stat__num" data-count="500">0</span><span class="stat__plus">+</span><small>باب WPC يومياً</small></div>
+          <div class="stat"><span class="stat__num" data-count="100">0</span><span class="stat__plus">%</span><small>مقاوم للماء</small></div>
+          <div class="stat"><span class="stat__num" data-count="4">0</span><span class="stat__plus"></span><small>أنواع تصميم</small></div>
         </div>
       </div>
 
       <div class="hero__visual reveal">
         <div class="door-3d">
           <div class="door-3d__frame">
-            <div class="door-3d__panel">
-              <span class="door-3d__handle"></span>
-              <div class="door-3d__inlay"></div>
-              <div class="door-3d__inlay"></div>
-            </div>
+            <svg class="door-3d__svg" aria-hidden="true"><use href="#door-single"/></svg>
           </div>
           <div class="door-3d__shadow"></div>
         </div>
-        <div class="badge-float badge-float--1">🛡️ أمان معتمد</div>
-        <div class="badge-float badge-float--2">🌿 خشب طبيعي</div>
+        <div class="badge-float badge-float--1">💧 100% مقاوم للماء</div>
+        <div class="badge-float badge-float--2">🏭 +500 باب / يوم</div>
       </div>
     </div>
     <a href="#about" class="scroll-hint" aria-label="انتقل للأسفل"><span></span></a>
   </section>
 
-  <!-- Trust strip -->
+  <!-- Trust marquee -->
   <div class="marquee" aria-hidden="true">
     <div class="marquee__track">
-      <span>أبواب خشبية فاخرة</span><span>•</span>
-      <span>أبواب مصفّحة</span><span>•</span>
-      <span>أبواب مدرّعة آمنة</span><span>•</span>
-      <span>تصاميم حسب الطلب</span><span>•</span>
-      <span>ضمان حتى 10 سنوات</span><span>•</span>
-      <span>تركيب احترافي</span><span>•</span>
-      <span>أبواب خشبية فاخرة</span><span>•</span>
-      <span>أبواب مصفّحة</span><span>•</span>
-      <span>أبواب مدرّعة آمنة</span><span>•</span>
-      <span>تصاميم حسب الطلب</span><span>•</span>
-      <span>ضمان حتى 10 سنوات</span><span>•</span>
-      <span>تركيب احترافي</span><span>•</span>
+      <span>أبواب WPC مقاومة للماء</span><span>•</span>
+      <span>أبواب حمامات</span><span>•</span>
+      <span>أبواب غرف</span><span>•</span>
+      <span>ضلفة واحدة • سحاب • ضلفة ونص • ضلفتين</span><span>•</span>
+      <span>+500 باب يومياً</span><span>•</span>
+      <span>توريد للمشاريع وشركات التشطيبات</span><span>•</span>
+      <span>أبواب WPC مقاومة للماء</span><span>•</span>
+      <span>أبواب حمامات</span><span>•</span>
+      <span>أبواب غرف</span><span>•</span>
+      <span>ضلفة واحدة • سحاب • ضلفة ونص • ضلفتين</span><span>•</span>
+      <span>+500 باب يومياً</span><span>•</span>
+      <span>توريد للمشاريع وشركات التشطيبات</span><span>•</span>
     </div>
   </div>
 
-  <!-- About -->
+  <!-- About WPC -->
   <section class="section about" id="about">
     <div class="container about__grid">
       <div class="about__media reveal">
-        <div class="about__img about__img--main"></div>
-        <div class="about__img about__img--sub"></div>
+        <div class="about__door about__door--front" style="color:#d9b877"><svg aria-hidden="true"><use href="#door-single"/></svg></div>
+        <div class="about__door about__door--back" style="color:#e9e7e2"><svg aria-hidden="true"><use href="#door-double"/></svg></div>
         <div class="about__exp">
-          <strong>+15</strong>
-          <span>عاماً في عالم الأبواب</span>
+          <strong>WPC</strong>
+          <span>خشب بلاستيك مركّب</span>
         </div>
       </div>
       <div class="about__text">
-        <p class="eyebrow reveal">من نحن</p>
-        <h2 class="reveal">إرثٌ من الإتقان في كل تفصيلة</h2>
+        <p class="eyebrow reveal">ما هو WPC ولماذا نتخصص فيه</p>
+        <h2 class="reveal">باب لا يتأثر بالماء ولا الرطوبة</h2>
         <p class="reveal">
-          انطلقت <strong>نادا دورز</strong> من شغف بصناعة الأبواب التي تليق بالمنازل والمشاريع
-          الراقية. نجمع بين خبرة الحرفيين المهرة وأحدث خطوط الإنتاج الأوتوماتيكية لنقدّم
-          أبواباً تتفوّق في المتانة والجمال على حدٍّ سواء.
+          <strong>WPC</strong> (الخشب البلاستيكي المركّب) هو الجيل الجديد من الأبواب التي تجمع
+          مظهر الخشب الطبيعي مع متانة البلاستيك. اخترنا أن نتخصص فيه <strong>حصرياً</strong>
+          لأنه الحل الأمثل لأبواب الغرف والحمامات في مناخنا.
         </p>
         <ul class="about__list reveal">
-          <li><span>✔</span> خامات مستوردة بأعلى معايير الجودة</li>
-          <li><span>✔</span> تصاميم عصرية وكلاسيكية حسب ذوقك</li>
-          <li><span>✔</span> أنظمة أمان وأقفال ذكية متقدمة</li>
-          <li><span>✔</span> فريق قياس وتركيب معتمد</li>
+          <li><span>✔</span> مقاوم 100% للماء والرطوبة — مثالي للحمامات</li>
+          <li><span>✔</span> لا يتقوّس ولا يتشقق ولا ينتفخ مع الزمن</li>
+          <li><span>✔</span> مقاوم للنمل الأبيض والحشرات والعفن</li>
+          <li><span>✔</span> خفيف الوزن، عازل للصوت، وسهل التنظيف</li>
         </ul>
-        <a href="#contact" class="btn reveal">ابدأ مشروعك معنا</a>
+        <a href="#products" class="btn reveal">تعرّف على أنواعنا</a>
       </div>
     </div>
   </section>
 
-  <!-- Products -->
+  <!-- Products: door types -->
   <section class="section products" id="products">
     <div class="container">
       <div class="section__head">
-        <p class="eyebrow reveal">منتجاتنا</p>
-        <h2 class="reveal">باب لكل احتياج وذوق</h2>
-        <p class="section__sub reveal">تشكيلة واسعة من الأبواب المصمّمة لتناسب الفلل والشقق والمشاريع التجارية.</p>
+        <p class="eyebrow reveal">أنواع أبواب WPC لدينا</p>
+        <h2 class="reveal">أربعة تصاميم تناسب كل فتحة</h2>
+        <p class="section__sub reveal">نصنّع كل نوع بمقاسات دقيقة حسب مشروعك، وبتشطيبات وألوان متعددة.</p>
       </div>
       <div class="cards">
         <article class="card reveal">
-          <div class="card__icon" data-variant="wood">🚪</div>
-          <h3>أبواب خشبية فاخرة</h3>
-          <p>أبواب من الخشب الطبيعي والمعالج بتشطيبات راقية تمنح مساحتك دفئاً وأناقة خالدة.</p>
+          <div class="card__door" style="color:#d9b877"><svg aria-hidden="true"><use href="#door-single"/></svg></div>
+          <h3>باب ضلفة واحدة</h3>
+          <p>الخيار الأكثر شيوعاً لأبواب الغرف والحمامات — ضلفة واحدة بفتح كامل ومتانة عالية.</p>
           <span class="card__tag">الأكثر طلباً</span>
         </article>
         <article class="card reveal">
-          <div class="card__icon" data-variant="armored">🛡️</div>
-          <h3>أبواب مدرّعة</h3>
-          <p>حماية قصوى بطبقات فولاذية وأقفال متعددة النقاط لراحة بال لا تُقدّر بثمن.</p>
+          <div class="card__door" style="color:#c9a063"><svg aria-hidden="true"><use href="#door-sliding"/></svg></div>
+          <h3>باب سحاب (منزلق)</h3>
+          <p>يوفّر المساحة بفتح أفقي انزلاقي — مثالي للحمامات والمساحات الضيقة وغرف الملابس.</p>
         </article>
         <article class="card reveal">
-          <div class="card__icon" data-variant="steel">🔩</div>
-          <h3>أبواب مصفّحة</h3>
-          <p>متانة عالية ومقاومة للعوامل الجوية، مثالية للمداخل الرئيسية والمستودعات.</p>
+          <div class="card__door" style="color:#d9b877"><svg aria-hidden="true"><use href="#door-half"/></svg></div>
+          <h3>باب ضلفة ونص</h3>
+          <p>ضلفة رئيسية للاستخدام اليومي وأخرى صغيرة تُفتح عند الحاجة — للفتحات الواسعة.</p>
         </article>
         <article class="card reveal">
-          <div class="card__icon" data-variant="smart">🔐</div>
-          <h3>أبواب ذكية</h3>
-          <p>تحكّم بصمة ورمز وتطبيق جوال — تقنية تفتح لك المستقبل بلمسة واحدة.</p>
-          <span class="card__tag card__tag--new">جديد</span>
-        </article>
-        <article class="card reveal">
-          <div class="card__icon" data-variant="interior">🏠</div>
-          <h3>أبواب داخلية</h3>
-          <p>تصاميم أنيقة وخفيفة لغرف المنزل بألوان وتشطيبات متناغمة مع ديكورك.</p>
-        </article>
-        <article class="card reveal">
-          <div class="card__icon" data-variant="custom">✨</div>
-          <h3>تصاميم حسب الطلب</h3>
-          <p>أحضر فكرتك ونحوّلها إلى باب فريد — مقاسات وزخارف وألوان بلا حدود.</p>
+          <div class="card__door" style="color:#c9a063"><svg aria-hidden="true"><use href="#door-double"/></svg></div>
+          <h3>باب ضلفتين</h3>
+          <p>ضلفتان متماثلتان بإطلالة فخمة ومدخل واسع — للمداخل الرئيسية والصالات.</p>
+          <span class="card__tag card__tag--new">فخامة</span>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- Features -->
+  <!-- Applications -->
+  <section class="section applications" id="applications">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow reveal">أين تُستخدم أبوابنا</p>
+        <h2 class="reveal">مصممة للغرف والحمامات</h2>
+      </div>
+      <div class="apps">
+        <article class="app reveal">
+          <div class="app__icon">🛏️</div>
+          <h3>أبواب الغرف</h3>
+          <p>مظهر خشبي أنيق وعزل صوتي يمنح غرف النوم والمكاتب خصوصية ودفئاً، مع متانة تدوم سنوات.</p>
+          <ul>
+            <li>تشطيبات وألوان متعددة</li>
+            <li>عزل للصوت والحرارة</li>
+            <li>مقاسات حسب الطلب</li>
+          </ul>
+        </article>
+        <article class="app reveal">
+          <div class="app__icon">🚿</div>
+          <h3>أبواب الحمامات</h3>
+          <p>الميزة الأكبر لـ WPC: لا يتأثر بالبخار أو الماء أو الرطوبة إطلاقاً — لا انتفاخ ولا تعفّن مدى الحياة.</p>
+          <ul>
+            <li>مقاوم 100% للماء والبخار</li>
+            <li>لا يحتاج صيانة أو دهان</li>
+            <li>سهل التنظيف ومضاد للعفن</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why WPC features -->
   <section class="section features" id="features">
     <div class="container">
       <div class="section__head">
         <p class="eyebrow reveal">لماذا نادا دورز</p>
-        <h2 class="reveal">أسباب تجعلنا خيارك الأول</h2>
+        <h2 class="reveal">تخصص واحد نتقنه تماماً</h2>
       </div>
       <div class="features__grid">
-        <div class="feature reveal">
-          <div class="feature__num">01</div>
-          <h3>جودة لا تُساوم</h3>
-          <p>نختار خاماتنا بعناية ونخضع كل باب لفحص دقيق قبل التسليم.</p>
+        <div class="feature reveal"><div class="feature__num">01</div><h3>تخصص حصري في WPC</h3><p>لا نشتّت جهدنا — كل خبرتنا وخطوط إنتاجنا مكرّسة لإتقان أبواب WPC فقط.</p></div>
+        <div class="feature reveal"><div class="feature__num">02</div><h3>طاقة +500 باب يومياً</h3><p>قدرة إنتاجية ضخمة تضمن تلبية طلبات المشاريع الكبرى في الوقت المحدد.</p></div>
+        <div class="feature reveal"><div class="feature__num">03</div><h3>جودة ثابتة موحّدة</h3><p>معايير صارمة تضمن أن كل باب يخرج بنفس الجودة العالية مهما كانت الكمية.</p></div>
+        <div class="feature reveal"><div class="feature__num">04</div><h3>توريد للمشاريع</h3><p>شريك موثوق لشركات المقاولات والتشطيبات والديكور بأسعار الجملة.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Capacity / Projects -->
+  <section class="section capacity" id="capacity">
+    <div class="container capacity__grid">
+      <div class="capacity__text">
+        <p class="eyebrow reveal">الطاقة الإنتاجية والتوريد</p>
+        <h2 class="reveal">شريكك الموثوق في المشاريع الكبرى</h2>
+        <p class="reveal">
+          بطاقة إنتاجية تتجاوز <strong>500 باب WPC يومياً</strong>، نملك القدرة على تزويد
+          وتوريد كميات كبيرة بجودة موحّدة وفي مواعيد دقيقة — لنكون الخيار الأول
+          لشركات التشطيبات والديكور والمقاولات والمطوّرين العقاريين.
+        </p>
+        <div class="capacity__stats reveal">
+          <div class="cstat"><strong><span class="stat__num" data-count="500">0</span>+</strong><span>باب يومياً</span></div>
+          <div class="cstat"><strong><span class="stat__num" data-count="15000">0</span>+</strong><span>باب شهرياً</span></div>
+          <div class="cstat"><strong>WPC</strong><span>تخصص حصري</span></div>
         </div>
-        <div class="feature reveal">
-          <div class="feature__num">02</div>
-          <h3>تصنيع محلي متطور</h3>
-          <p>خطوط إنتاج حديثة داخل المملكة تضمن السرعة والدقة في التنفيذ.</p>
-        </div>
-        <div class="feature reveal">
-          <div class="feature__num">03</div>
-          <h3>ضمان يصل 10 سنوات</h3>
-          <p>نقف خلف منتجاتنا بضمان شامل وخدمة ما بعد البيع.</p>
-        </div>
-        <div class="feature reveal">
-          <div class="feature__num">04</div>
-          <h3>أسعار تنافسية</h3>
-          <p>قيمة حقيقية مقابل سعرك — من المصنع إلى بابك مباشرة.</p>
-        </div>
+        <a href="#contact" class="btn reveal">اطلب عرض أسعار جملة</a>
+      </div>
+      <div class="capacity__partners reveal">
+        <h3>نوّرد لـ:</h3>
+        <ul>
+          <li><span>🏗️</span> شركات المقاولات</li>
+          <li><span>🎨</span> شركات التشطيبات والديكور</li>
+          <li><span>🏢</span> المطوّرين العقاريين</li>
+          <li><span>🏨</span> الفنادق والمجمّعات السكنية</li>
+          <li><span>🛒</span> معارض ووكلاء الأبواب</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -239,32 +330,33 @@
   <section class="section process" id="process">
     <div class="container">
       <div class="section__head">
-        <p class="eyebrow reveal">مراحل التصنيع</p>
-        <h2 class="reveal">من الفكرة إلى التركيب</h2>
+        <p class="eyebrow reveal">آلية التوريد</p>
+        <h2 class="reveal">من الطلب إلى التسليم</h2>
       </div>
       <div class="timeline">
-        <div class="tl reveal"><div class="tl__dot">1</div><h3>الاستشارة والقياس</h3><p>زيارة موقعك لأخذ المقاسات وفهم احتياجك بدقة.</p></div>
-        <div class="tl reveal"><div class="tl__dot">2</div><h3>التصميم والاختيار</h3><p>نعرض عليك الخامات والألوان والتصاميم المناسبة.</p></div>
-        <div class="tl reveal"><div class="tl__dot">3</div><h3>التصنيع الدقيق</h3><p>تنفيذ بابك في مصنعنا بأعلى معايير الجودة.</p></div>
-        <div class="tl reveal"><div class="tl__dot">4</div><h3>التركيب والتسليم</h3><p>فريق متخصص يركّب بابك باحترافية ويسلّمه جاهزاً.</p></div>
+        <div class="tl reveal"><div class="tl__dot">1</div><h3>الطلب والمقاسات</h3><p>نستلم احتياجك من الأنواع والمقاسات والكميات والتشطيبات.</p></div>
+        <div class="tl reveal"><div class="tl__dot">2</div><h3>عرض السعر</h3><p>نقدّم عرضاً تنافسياً بأسعار جملة مع جدول زمني واضح.</p></div>
+        <div class="tl reveal"><div class="tl__dot">3</div><h3>الإنتاج</h3><p>تصنيع دقيق على خطوطنا بطاقة +500 باب يومياً.</p></div>
+        <div class="tl reveal"><div class="tl__dot">4</div><h3>التوريد والتسليم</h3><p>تسليم الكميات لموقع مشروعك في الموعد المتفق عليه.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- Gallery -->
+  <!-- Gallery: WPC finishes -->
   <section class="section gallery" id="gallery">
     <div class="container">
       <div class="section__head">
-        <p class="eyebrow reveal">المعرض</p>
-        <h2 class="reveal">أعمال تتحدث عن نفسها</h2>
+        <p class="eyebrow reveal">المعرض والتشطيبات</p>
+        <h2 class="reveal">تشطيبات WPC المتوفرة</h2>
+        <p class="section__sub reveal">نفس الجودة بمظهر يناسب كل ديكور — وألوان أخرى حسب الطلب.</p>
       </div>
       <div class="gallery__grid">
-        <figure class="gallery__item reveal" data-tone="1"><figcaption>باب فيلا كلاسيكي</figcaption></figure>
-        <figure class="gallery__item reveal" data-tone="2"><figcaption>مدخل مدرّع عصري</figcaption></figure>
-        <figure class="gallery__item reveal" data-tone="3"><figcaption>باب خشبي منحوت</figcaption></figure>
-        <figure class="gallery__item reveal" data-tone="4"><figcaption>باب ذكي بلمسة معدنية</figcaption></figure>
-        <figure class="gallery__item reveal" data-tone="5"><figcaption>أبواب داخلية متناسقة</figcaption></figure>
-        <figure class="gallery__item reveal" data-tone="6"><figcaption>تصميم خاص فاخر</figcaption></figure>
+        <figure class="gallery__item reveal"><div class="gallery__door" style="color:#e9e7e2"><svg aria-hidden="true"><use href="#door-single"/></svg></div><figcaption>أبيض ناصع</figcaption></figure>
+        <figure class="gallery__item reveal"><div class="gallery__door" style="color:#caa46a"><svg aria-hidden="true"><use href="#door-double"/></svg></div><figcaption>بلوط ذهبي</figcaption></figure>
+        <figure class="gallery__item reveal"><div class="gallery__door" style="color:#7a5230"><svg aria-hidden="true"><use href="#door-half"/></svg></div><figcaption>جوز داكن</figcaption></figure>
+        <figure class="gallery__item reveal"><div class="gallery__door" style="color:#8d9197"><svg aria-hidden="true"><use href="#door-sliding"/></svg></div><figcaption>رمادي عصري</figcaption></figure>
+        <figure class="gallery__item reveal"><div class="gallery__door" style="color:#3a3a40"><svg aria-hidden="true"><use href="#door-single"/></svg></div><figcaption>أسود فحمي</figcaption></figure>
+        <figure class="gallery__item reveal"><div class="gallery__door" style="color:#b06a3f"><svg aria-hidden="true"><use href="#door-double"/></svg></div><figcaption>ماهوجني</figcaption></figure>
       </div>
     </div>
   </section>
@@ -273,70 +365,74 @@
   <section class="section testimonials">
     <div class="container">
       <div class="section__head">
-        <p class="eyebrow reveal">آراء عملائنا</p>
-        <h2 class="reveal">ثقة تُبنى باباً تلو الآخر</h2>
+        <p class="eyebrow reveal">آراء شركائنا</p>
+        <h2 class="reveal">ثقة المشاريع الكبرى</h2>
       </div>
       <div class="quotes">
         <blockquote class="quote reveal">
-          <p>"باب المدخل غيّر شكل الفيلا بالكامل. جودة وإتقان فاق توقعاتي والتركيب كان سريعاً ونظيفاً."</p>
-          <footer><strong>أحمد العتيبي</strong><span>الرياض</span></footer>
+          <p>"وردّونا أبواب WPC لمشروع 180 شقة. الالتزام بالكميات والمواعيد كان ممتازاً والجودة موحّدة في كل باب."</p>
+          <footer><strong>م. سارة القحطاني</strong><span>شركة تشطيبات • جدة</span></footer>
         </blockquote>
         <blockquote class="quote reveal">
-          <p>"تعاملت معهم في مشروع 24 شقة. التزام بالمواعيد وجودة موحدة في كل باب. شركاء نجاح حقيقيون."</p>
-          <footer><strong>م. سارة القحطاني</strong><span>مقاولات • جدة</span></footer>
+          <p>"اخترنا WPC لأبواب الحمامات بعد مشاكل الخشب العادي مع الرطوبة. فرق كبير — لا انتفاخ ولا تلف نهائياً."</p>
+          <footer><strong>أحمد العتيبي</strong><span>مقاولات • الرياض</span></footer>
         </blockquote>
         <blockquote class="quote reveal">
-          <p>"الباب الذكي عملي جداً وأنيق. خدمة العملاء متعاونة من أول مكالمة حتى ما بعد التركيب."</p>
-          <footer><strong>خالد الدوسري</strong><span>الدمام</span></footer>
+          <p>"أسعار جملة منافسة وخدمة احترافية. أصبحوا المورّد الرئيسي لأبواب مشاريعنا السكنية."</p>
+          <footer><strong>خالد الدوسري</strong><span>تطوير عقاري • الدمام</span></footer>
         </blockquote>
       </div>
     </div>
   </section>
 
-  <!-- CTA + Contact -->
+  <!-- Contact -->
   <section class="section contact" id="contact">
     <div class="container contact__grid">
       <div class="contact__info">
         <p class="eyebrow reveal">تواصل معنا</p>
-        <h2 class="reveal">جاهزون لنصنع لك الباب المثالي</h2>
-        <p class="reveal">اترك بياناتك وسيتواصل معك فريقنا خلال 24 ساعة لتقديم استشارة مجانية وعرض سعر.</p>
+        <h2 class="reveal">اطلب عرض سعر لمشروعك</h2>
+        <p class="reveal">سواء كنت تحتاج باباً واحداً أو توريد آلاف الأبواب لمشروعك — فريقنا جاهز خلال 24 ساعة.</p>
         <ul class="contact__list reveal">
-          <li><span>📍</span> المملكة العربية السعودية</li>
-          <li><span>📞</span> <a href="tel:+966500000000" dir="ltr">+966 50 000 0000</a></li>
+          <li><span>📍</span> طريق الأمير محمد بن سلمان، حي العقيق — الرياض</li>
+          <li><span>📞</span> <a href="tel:+966544072610" dir="ltr">+966 54 407 2610</a></li>
           <li><span>✉️</span> <a href="mailto:info@nadadoors.com">info@nadadoors.com</a></li>
           <li><span>🕐</span> السبت - الخميس: 9 صباحاً - 9 مساءً</li>
         </ul>
         <div class="contact__socials reveal">
-          <a href="#" aria-label="واتساب">واتساب</a>
+          <a href="https://wa.me/966544072610" target="_blank" rel="noopener" aria-label="واتساب">واتساب</a>
+          <a href="tel:+966544072610" aria-label="اتصال مباشر">اتصال مباشر</a>
           <a href="#" aria-label="انستغرام">إنستغرام</a>
-          <a href="#" aria-label="تويتر">إكس</a>
         </div>
       </div>
 
       <form class="contact__form reveal" id="quoteForm" novalidate>
         <div class="field">
-          <label for="name">الاسم الكامل</label>
-          <input type="text" id="name" name="name" placeholder="اكتب اسمك" required />
+          <label for="name">الاسم / اسم الشركة</label>
+          <input type="text" id="name" name="name" placeholder="اكتب اسمك أو اسم شركتك" required />
         </div>
         <div class="field">
           <label for="phone">رقم الجوال</label>
           <input type="tel" id="phone" name="phone" placeholder="05xxxxxxxx" required />
         </div>
-        <div class="field">
-          <label for="product">نوع الباب</label>
-          <select id="product" name="product">
-            <option value="">اختر النوع</option>
-            <option>أبواب خشبية فاخرة</option>
-            <option>أبواب مدرّعة</option>
-            <option>أبواب مصفّحة</option>
-            <option>أبواب ذكية</option>
-            <option>أبواب داخلية</option>
-            <option>تصميم حسب الطلب</option>
-          </select>
+        <div class="field field--row">
+          <div>
+            <label for="product">نوع الباب</label>
+            <select id="product" name="product">
+              <option value="">اختر النوع</option>
+              <option>ضلفة واحدة</option>
+              <option>سحاب (منزلق)</option>
+              <option>ضلفة ونص</option>
+              <option>ضلفتين</option>
+            </select>
+          </div>
+          <div>
+            <label for="qty">الكمية التقريبية</label>
+            <input type="number" id="qty" name="qty" min="1" placeholder="مثال: 250" />
+          </div>
         </div>
         <div class="field">
-          <label for="message">تفاصيل إضافية</label>
-          <textarea id="message" name="message" rows="3" placeholder="أخبرنا عن مشروعك..."></textarea>
+          <label for="message">تفاصيل المشروع</label>
+          <textarea id="message" name="message" rows="3" placeholder="نوع المشروع، المقاسات، التشطيب المطلوب..."></textarea>
         </div>
         <button type="submit" class="btn btn--lg btn--block">أرسل الطلب</button>
         <p class="form__note" id="formNote" role="status"></p>
@@ -355,27 +451,27 @@
               <circle cx="62" cy="50" r="3.2" fill="currentColor"/>
             </svg>
           </span>
-          <span class="brand__text"><strong>نادا دورز</strong><small>NADA DOORS</small></span>
+          <span class="brand__text"><strong>نادا دورز</strong><small>WPC DOORS</small></span>
         </a>
-        <p>مصنع متخصص في الأبواب الفاخرة والآمنة بتصاميم تجمع الأصالة والحداثة.</p>
+        <p>مصنع متخصص حصرياً في أبواب WPC المقاومة للماء للغرف والحمامات — وتوريد للمشاريع الكبرى.</p>
       </div>
       <div class="footer__col">
         <h4>روابط سريعة</h4>
-        <a href="#about">من نحن</a>
-        <a href="#products">منتجاتنا</a>
-        <a href="#process">مراحل التصنيع</a>
-        <a href="#gallery">المعرض</a>
+        <a href="#about">عن WPC</a>
+        <a href="#products">أنواع الأبواب</a>
+        <a href="#applications">الاستخدامات</a>
+        <a href="#capacity">الطاقة الإنتاجية</a>
       </div>
       <div class="footer__col">
-        <h4>منتجاتنا</h4>
-        <a href="#products">أبواب خشبية</a>
-        <a href="#products">أبواب مدرّعة</a>
-        <a href="#products">أبواب ذكية</a>
-        <a href="#products">تصميم خاص</a>
+        <h4>أنواع الأبواب</h4>
+        <a href="#products">ضلفة واحدة</a>
+        <a href="#products">باب سحاب</a>
+        <a href="#products">ضلفة ونص</a>
+        <a href="#products">ضلفتين</a>
       </div>
       <div class="footer__col">
         <h4>تواصل</h4>
-        <a href="tel:+966500000000" dir="ltr">+966 50 000 0000</a>
+        <a href="tel:+966544072610" dir="ltr">+966 54 407 2610</a>
         <a href="mailto:info@nadadoors.com">info@nadadoors.com</a>
         <a href="#contact">طلب عرض سعر</a>
       </div>
@@ -383,12 +479,12 @@
     <div class="footer__bottom">
       <div class="container">
         <p>© <span id="year"></span> نادا دورز — جميع الحقوق محفوظة.</p>
-        <p>صُنع بشغف في المملكة العربية السعودية 🇸🇦</p>
+        <p>متخصصون في أبواب WPC 🇸🇦</p>
       </div>
     </div>
   </footer>
 
-  <a href="https://wa.me/966500000000" class="whatsapp-fab" aria-label="تواصل عبر واتساب" target="_blank" rel="noopener">
+  <a href="https://wa.me/966544072610?text=مرحباً، أرغب في الاستفسار عن أبواب WPC" class="whatsapp-fab" aria-label="تواصل عبر واتساب" target="_blank" rel="noopener">
     <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.515 5.26l-.999 3.648 3.973-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
   </a>
 
