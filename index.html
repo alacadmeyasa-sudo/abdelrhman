@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1a1a1a" />
+  <title>نادا دورز | Nada Doors — مصنع الأبواب الفاخرة</title>
+  <meta name="description" content="نادا دورز - مصنع متخصص في تصنيع الأبواب الخشبية والمصفحة والمدرعة بأعلى معايير الجودة والتصميم العصري في المملكة العربية السعودية." />
+  <meta name="keywords" content="أبواب, مصنع أبواب, نادا دورز, أبواب خشب, أبواب مصفحة, أبواب أمان, Nada Doors" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="نادا دورز | Nada Doors" />
+  <meta property="og:description" content="مصنع الأبواب الفاخرة — جودة، أمان، وأناقة." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23E6B325'/%3E%3Crect x='30' y='22' width='40' height='56' rx='4' fill='none' stroke='white' stroke-width='5'/%3E%3Ccircle cx='60' cy='50' r='3' fill='white'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <!-- Page loader -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__door">
+      <span></span><span></span>
+    </div>
+    <p class="loader__text">نـــادا دورز</p>
+  </div>
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="brand" aria-label="نادا دورز الصفحة الرئيسية">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 100 100" width="40" height="40">
+            <rect x="28" y="18" width="44" height="64" rx="4" fill="none" stroke="currentColor" stroke-width="5"/>
+            <circle cx="62" cy="50" r="3.2" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="brand__text">
+          <strong>نادا دورز</strong>
+          <small>NADA DOORS</small>
+        </span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="القائمة الرئيسية">
+        <a href="#home">الرئيسية</a>
+        <a href="#about">من نحن</a>
+        <a href="#products">منتجاتنا</a>
+        <a href="#features">لماذا نحن</a>
+        <a href="#process">مراحل التصنيع</a>
+        <a href="#gallery">المعرض</a>
+        <a href="#contact" class="btn btn--sm">اطلب عرض سعر</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="فتح القائمة" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero__bg" aria-hidden="true">
+      <div class="hero__glow"></div>
+      <div class="hero__grain"></div>
+    </div>
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <p class="eyebrow reveal">صناعة سعودية • جودة عالمية</p>
+        <h1 class="hero__title reveal">
+          أبواب تُحاكي
+          <span class="text-gold">الفخامة</span>
+          وتحمي ما يهمك
+        </h1>
+        <p class="hero__lead reveal">
+          في <strong>نادا دورز</strong> نصنع أبواباً تجمع بين الأناقة العصرية والأمان المطلق.
+          من الخشب الطبيعي إلى الأبواب المدرّعة — كل باب قصة تُصنع بإتقان.
+        </p>
+        <div class="hero__actions reveal">
+          <a href="#products" class="btn btn--lg">اكتشف منتجاتنا</a>
+          <a href="#contact" class="btn btn--ghost btn--lg">تواصل معنا</a>
+        </div>
+        <div class="hero__stats reveal">
+          <div class="stat"><span class="stat__num" data-count="15">0</span><span class="stat__plus">+</span><small>عاماً من الخبرة</small></div>
+          <div class="stat"><span class="stat__num" data-count="8000">0</span><span class="stat__plus">+</span><small>باب تم تركيبه</small></div>
+          <div class="stat"><span class="stat__num" data-count="98">0</span><span class="stat__plus">%</span><small>رضا العملاء</small></div>
+        </div>
+      </div>
+
+      <div class="hero__visual reveal">
+        <div class="door-3d">
+          <div class="door-3d__frame">
+            <div class="door-3d__panel">
+              <span class="door-3d__handle"></span>
+              <div class="door-3d__inlay"></div>
+              <div class="door-3d__inlay"></div>
+            </div>
+          </div>
+          <div class="door-3d__shadow"></div>
+        </div>
+        <div class="badge-float badge-float--1">🛡️ أمان معتمد</div>
+        <div class="badge-float badge-float--2">🌿 خشب طبيعي</div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="انتقل للأسفل"><span></span></a>
+  </section>
+
+  <!-- Trust strip -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>أبواب خشبية فاخرة</span><span>•</span>
+      <span>أبواب مصفّحة</span><span>•</span>
+      <span>أبواب مدرّعة آمنة</span><span>•</span>
+      <span>تصاميم حسب الطلب</span><span>•</span>
+      <span>ضمان حتى 10 سنوات</span><span>•</span>
+      <span>تركيب احترافي</span><span>•</span>
+      <span>أبواب خشبية فاخرة</span><span>•</span>
+      <span>أبواب مصفّحة</span><span>•</span>
+      <span>أبواب مدرّعة آمنة</span><span>•</span>
+      <span>تصاميم حسب الطلب</span><span>•</span>
+      <span>ضمان حتى 10 سنوات</span><span>•</span>
+      <span>تركيب احترافي</span><span>•</span>
+    </div>
+  </div>
+
+  <!-- About -->
+  <section class="section about" id="about">
+    <div class="container about__grid">
+      <div class="about__media reveal">
+        <div class="about__img about__img--main"></div>
+        <div class="about__img about__img--sub"></div>
+        <div class="about__exp">
+          <strong>+15</strong>
+          <span>عاماً في عالم الأبواب</span>
+        </div>
+      </div>
+      <div class="about__text">
+        <p class="eyebrow reveal">من نحن</p>
+        <h2 class="reveal">إرثٌ من الإتقان في كل تفصيلة</h2>
+        <p class="reveal">
+          انطلقت <strong>نادا دورز</strong> من شغف بصناعة الأبواب التي تليق بالمنازل والمشاريع
+          الراقية. نجمع بين خبرة الحرفيين المهرة وأحدث خطوط الإنتاج الأوتوماتيكية لنقدّم
+          أبواباً تتفوّق في المتانة والجمال على حدٍّ سواء.
+        </p>
+        <ul class="about__list reveal">
+          <li><span>✔</span> خامات مستوردة بأعلى معايير الجودة</li>
+          <li><span>✔</span> تصاميم عصرية وكلاسيكية حسب ذوقك</li>
+          <li><span>✔</span> أنظمة أمان وأقفال ذكية متقدمة</li>
+          <li><span>✔</span> فريق قياس وتركيب معتمد</li>
+        </ul>
+        <a href="#contact" class="btn reveal">ابدأ مشروعك معنا</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="section products" id="products">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow reveal">منتجاتنا</p>
+        <h2 class="reveal">باب لكل احتياج وذوق</h2>
+        <p class="section__sub reveal">تشكيلة واسعة من الأبواب المصمّمة لتناسب الفلل والشقق والمشاريع التجارية.</p>
+      </div>
+      <div class="cards">
+        <article class="card reveal">
+          <div class="card__icon" data-variant="wood">🚪</div>
+          <h3>أبواب خشبية فاخرة</h3>
+          <p>أبواب من الخشب الطبيعي والمعالج بتشطيبات راقية تمنح مساحتك دفئاً وأناقة خالدة.</p>
+          <span class="card__tag">الأكثر طلباً</span>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon" data-variant="armored">🛡️</div>
+          <h3>أبواب مدرّعة</h3>
+          <p>حماية قصوى بطبقات فولاذية وأقفال متعددة النقاط لراحة بال لا تُقدّر بثمن.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon" data-variant="steel">🔩</div>
+          <h3>أبواب مصفّحة</h3>
+          <p>متانة عالية ومقاومة للعوامل الجوية، مثالية للمداخل الرئيسية والمستودعات.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon" data-variant="smart">🔐</div>
+          <h3>أبواب ذكية</h3>
+          <p>تحكّم بصمة ورمز وتطبيق جوال — تقنية تفتح لك المستقبل بلمسة واحدة.</p>
+          <span class="card__tag card__tag--new">جديد</span>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon" data-variant="interior">🏠</div>
+          <h3>أبواب داخلية</h3>
+          <p>تصاميم أنيقة وخفيفة لغرف المنزل بألوان وتشطيبات متناغمة مع ديكورك.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon" data-variant="custom">✨</div>
+          <h3>تصاميم حسب الطلب</h3>
+          <p>أحضر فكرتك ونحوّلها إلى باب فريد — مقاسات وزخارف وألوان بلا حدود.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section features" id="features">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow reveal">لماذا نادا دورز</p>
+        <h2 class="reveal">أسباب تجعلنا خيارك الأول</h2>
+      </div>
+      <div class="features__grid">
+        <div class="feature reveal">
+          <div class="feature__num">01</div>
+          <h3>جودة لا تُساوم</h3>
+          <p>نختار خاماتنا بعناية ونخضع كل باب لفحص دقيق قبل التسليم.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="feature__num">02</div>
+          <h3>تصنيع محلي متطور</h3>
+          <p>خطوط إنتاج حديثة داخل المملكة تضمن السرعة والدقة في التنفيذ.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="feature__num">03</div>
+          <h3>ضمان يصل 10 سنوات</h3>
+          <p>نقف خلف منتجاتنا بضمان شامل وخدمة ما بعد البيع.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="feature__num">04</div>
+          <h3>أسعار تنافسية</h3>
+          <p>قيمة حقيقية مقابل سعرك — من المصنع إلى بابك مباشرة.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section process" id="process">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow reveal">مراحل التصنيع</p>
+        <h2 class="reveal">من الفكرة إلى التركيب</h2>
+      </div>
+      <div class="timeline">
+        <div class="tl reveal"><div class="tl__dot">1</div><h3>الاستشارة والقياس</h3><p>زيارة موقعك لأخذ المقاسات وفهم احتياجك بدقة.</p></div>
+        <div class="tl reveal"><div class="tl__dot">2</div><h3>التصميم والاختيار</h3><p>نعرض عليك الخامات والألوان والتصاميم المناسبة.</p></div>
+        <div class="tl reveal"><div class="tl__dot">3</div><h3>التصنيع الدقيق</h3><p>تنفيذ بابك في مصنعنا بأعلى معايير الجودة.</p></div>
+        <div class="tl reveal"><div class="tl__dot">4</div><h3>التركيب والتسليم</h3><p>فريق متخصص يركّب بابك باحترافية ويسلّمه جاهزاً.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow reveal">المعرض</p>
+        <h2 class="reveal">أعمال تتحدث عن نفسها</h2>
+      </div>
+      <div class="gallery__grid">
+        <figure class="gallery__item reveal" data-tone="1"><figcaption>باب فيلا كلاسيكي</figcaption></figure>
+        <figure class="gallery__item reveal" data-tone="2"><figcaption>مدخل مدرّع عصري</figcaption></figure>
+        <figure class="gallery__item reveal" data-tone="3"><figcaption>باب خشبي منحوت</figcaption></figure>
+        <figure class="gallery__item reveal" data-tone="4"><figcaption>باب ذكي بلمسة معدنية</figcaption></figure>
+        <figure class="gallery__item reveal" data-tone="5"><figcaption>أبواب داخلية متناسقة</figcaption></figure>
+        <figure class="gallery__item reveal" data-tone="6"><figcaption>تصميم خاص فاخر</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section testimonials">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow reveal">آراء عملائنا</p>
+        <h2 class="reveal">ثقة تُبنى باباً تلو الآخر</h2>
+      </div>
+      <div class="quotes">
+        <blockquote class="quote reveal">
+          <p>"باب المدخل غيّر شكل الفيلا بالكامل. جودة وإتقان فاق توقعاتي والتركيب كان سريعاً ونظيفاً."</p>
+          <footer><strong>أحمد العتيبي</strong><span>الرياض</span></footer>
+        </blockquote>
+        <blockquote class="quote reveal">
+          <p>"تعاملت معهم في مشروع 24 شقة. التزام بالمواعيد وجودة موحدة في كل باب. شركاء نجاح حقيقيون."</p>
+          <footer><strong>م. سارة القحطاني</strong><span>مقاولات • جدة</span></footer>
+        </blockquote>
+        <blockquote class="quote reveal">
+          <p>"الباب الذكي عملي جداً وأنيق. خدمة العملاء متعاونة من أول مكالمة حتى ما بعد التركيب."</p>
+          <footer><strong>خالد الدوسري</strong><span>الدمام</span></footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA + Contact -->
+  <section class="section contact" id="contact">
+    <div class="container contact__grid">
+      <div class="contact__info">
+        <p class="eyebrow reveal">تواصل معنا</p>
+        <h2 class="reveal">جاهزون لنصنع لك الباب المثالي</h2>
+        <p class="reveal">اترك بياناتك وسيتواصل معك فريقنا خلال 24 ساعة لتقديم استشارة مجانية وعرض سعر.</p>
+        <ul class="contact__list reveal">
+          <li><span>📍</span> المملكة العربية السعودية</li>
+          <li><span>📞</span> <a href="tel:+966500000000" dir="ltr">+966 50 000 0000</a></li>
+          <li><span>✉️</span> <a href="mailto:info@nadadoors.com">info@nadadoors.com</a></li>
+          <li><span>🕐</span> السبت - الخميس: 9 صباحاً - 9 مساءً</li>
+        </ul>
+        <div class="contact__socials reveal">
+          <a href="#" aria-label="واتساب">واتساب</a>
+          <a href="#" aria-label="انستغرام">إنستغرام</a>
+          <a href="#" aria-label="تويتر">إكس</a>
+        </div>
+      </div>
+
+      <form class="contact__form reveal" id="quoteForm" novalidate>
+        <div class="field">
+          <label for="name">الاسم الكامل</label>
+          <input type="text" id="name" name="name" placeholder="اكتب اسمك" required />
+        </div>
+        <div class="field">
+          <label for="phone">رقم الجوال</label>
+          <input type="tel" id="phone" name="phone" placeholder="05xxxxxxxx" required />
+        </div>
+        <div class="field">
+          <label for="product">نوع الباب</label>
+          <select id="product" name="product">
+            <option value="">اختر النوع</option>
+            <option>أبواب خشبية فاخرة</option>
+            <option>أبواب مدرّعة</option>
+            <option>أبواب مصفّحة</option>
+            <option>أبواب ذكية</option>
+            <option>أبواب داخلية</option>
+            <option>تصميم حسب الطلب</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">تفاصيل إضافية</label>
+          <textarea id="message" name="message" rows="3" placeholder="أخبرنا عن مشروعك..."></textarea>
+        </div>
+        <button type="submit" class="btn btn--lg btn--block">أرسل الطلب</button>
+        <p class="form__note" id="formNote" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#home" class="brand brand--light">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 100 100" width="36" height="36">
+              <rect x="28" y="18" width="44" height="64" rx="4" fill="none" stroke="currentColor" stroke-width="5"/>
+              <circle cx="62" cy="50" r="3.2" fill="currentColor"/>
+            </svg>
+          </span>
+          <span class="brand__text"><strong>نادا دورز</strong><small>NADA DOORS</small></span>
+        </a>
+        <p>مصنع متخصص في الأبواب الفاخرة والآمنة بتصاميم تجمع الأصالة والحداثة.</p>
+      </div>
+      <div class="footer__col">
+        <h4>روابط سريعة</h4>
+        <a href="#about">من نحن</a>
+        <a href="#products">منتجاتنا</a>
+        <a href="#process">مراحل التصنيع</a>
+        <a href="#gallery">المعرض</a>
+      </div>
+      <div class="footer__col">
+        <h4>منتجاتنا</h4>
+        <a href="#products">أبواب خشبية</a>
+        <a href="#products">أبواب مدرّعة</a>
+        <a href="#products">أبواب ذكية</a>
+        <a href="#products">تصميم خاص</a>
+      </div>
+      <div class="footer__col">
+        <h4>تواصل</h4>
+        <a href="tel:+966500000000" dir="ltr">+966 50 000 0000</a>
+        <a href="mailto:info@nadadoors.com">info@nadadoors.com</a>
+        <a href="#contact">طلب عرض سعر</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© <span id="year"></span> نادا دورز — جميع الحقوق محفوظة.</p>
+        <p>صُنع بشغف في المملكة العربية السعودية 🇸🇦</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/966500000000" class="whatsapp-fab" aria-label="تواصل عبر واتساب" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.515 5.26l-.999 3.648 3.973-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
