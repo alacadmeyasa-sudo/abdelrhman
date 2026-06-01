@@ -1,27 +1,20 @@
 # صور المصنع / Factory machine photos
 
-ضع صور الماكينات هنا **بنفس هذه الأسماء بالضبط** لتظهر تلقائياً في قسم "من داخل المصنع":
+هذه الصور تُعرض في قسم **"من داخل المصنع"** بالموقع. الصور الحالية مرفوعة وتعمل ✅
 
-Put the factory photos here using **these exact file names** so they appear
-automatically in the "Inside the factory" section of the website:
+These photos are shown in the website's "Inside the factory" section. Current
+photos are uploaded and live ✅
 
-| اسم الملف / File name            | الصورة المقصودة / Which photo                                  |
-|----------------------------------|----------------------------------------------------------------|
-| `emc-401-edgebander.jpg`         | ماكينة تغليف الحواف EMC-401 (الكبيرة البيضاء)                   |
-| `roller-coater.jpg`              | ماكينة الكسوة/التغليف بالأسطوانات (الماكينتان جنب بعض)          |
-| `press-tables.jpg`               | مكابس التجميع الطويلة بالإطار الأحمر                            |
-| `wpc-panels.jpg`                 | مجموعة ألواح WPC الجاهزة المرصوصة                               |
-| `wpc-panel-press.jpg`            | لوح WPC على طاولة الكبس الحمراء (لقطة قريبة)                    |
+| الملف / File              | الماكينة / Machine                              |
+|---------------------------|-------------------------------------------------|
+| `emc-401-edgebander.jpg`  | ماكينة تغليف الحواف EMC-401 (مميّزة/كبيرة)       |
+| `profile-wrapping.jpg`    | ماكينة تغليف البروفايل / كسوة القطاعات          |
+| `roller-coater.jpg`       | خط الكسوة بالأسطوانات + وحدة الغراء             |
+| `press-tables.jpg`        | مكابس التجميع (بالإطار الأحمر)                  |
+| `wpc-panels.jpg`          | ألواح WPC الجاهزة المرصوصة                       |
+| `wpc-panel-press.jpg`     | لوح WPC على طاولة الكبس                          |
 
-## كيف أرفعها؟ / How to upload
+## لإضافة أو استبدال صورة / To add or replace a photo
 
-**الأسهل عبر GitHub مباشرة:**
-1. افتح هذا المجلد على GitHub:
-   `https://github.com/alacadmeyasa-sudo/abdelrhman/tree/main/assets/machines`
-2. اضغط **Add file → Upload files**
-3. اسحب الصور الخمس (وأعد تسميتها بالأسماء أعلاه)، ثم **Commit changes** على فرع `main`.
-
-سيُعاد نشر الموقع تلقائياً وتظهر الصور خلال دقيقة.
-
-> الصيغة المفضّلة `.jpg`. لو كانت صورك بصيغة أخرى (مثل HEIC من الآيفون)،
-> حوّلها إلى JPG أولاً، أو أخبرني بالصيغة لأعدّل الروابط.
+ارفع الصورة بنفس اسم الملف أعلاه (أو أضف اسماً جديداً وأخبرني لأربطه في الموقع).
+الصيغة المفضّلة `.jpg`. سيُعاد نشر الموقع تلقائياً عند الدفع إلى فرع `main`.
